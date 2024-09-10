@@ -17,7 +17,7 @@ function App() {
     }
   }, [])
   
-  useEffect(() => { //Although this useEffect is rendered useless as we could run this line of code in 'handleSubmit' this gives us a good example of how and when to use useEffect.
+  useEffect(() => { //Although this useEffect could be regarded as the opposite of a shortcut as we could run this line of code in 'handleSubmit', this gives us a good example of how and when to use useEffect.
     if(broadcast !== 'No broadcast message set.') localStorage.setItem('broadcast', broadcast);
   }, [broadcast])
 
