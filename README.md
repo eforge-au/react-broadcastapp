@@ -1,46 +1,103 @@
-# Getting Started with Create React App
+# Lesson 1: Introduction to React - A simple localstorage app.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **Lesson 1** of the eforge learning series! In this lesson, you will learn the basics of React by building a simple **broadcasting system** that allows users to input and display broadcast messages.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### 📘 Lesson Overview:
 
-### `npm start`
+In this lesson, you will be introduced to the following key React concepts:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **useState Hook**: For managing component state.
+- **useEffect Hook**: To handle side effects, such as loading and saving data.
+- **Forms in React**: Handling user input with forms and controlling form submissions.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This repository contains the code for a broadcasting system where users can input a message that is stored in the browser's local storage and displayed on the screen.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📂 Repository Contents:
 
-### `npm run build`
+- **/src**: Contains the React source code files.
+  - `App.js`: The main React component where all the logic is implemented.
+  - `App.css`: Styles for the application.
+- **/public**: Public assets such as HTML and CSS files.
+- **package.json**: Contains the project’s dependencies and scripts.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🚀 How to Download and Run the Project:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get started with this React project, follow these steps:
 
-### `npm run eject`
+1. **Clone the repository** to your local machine using the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   ```bash
+   git clone https://github.com/eforge-au/react-broadcastapp.git
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Navigate to the project directory**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   ```bash
+   cd react-broadcastapp
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. **Install the project dependencies**:
 
-## Learn More
+   Ensure you have [Node.js](https://nodejs.org/) installed. Then run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Start the React project**:
+
+   To launch the project in your local development environment, run:
+
+   ```bash
+   npm run start
+   ```
+
+5. **Open your browser** and navigate to `http://localhost:3000` to view the project.
+
+---
+
+### 📝 What You Will Learn:
+
+By the end of this lesson, you will have a better understanding of:
+
+- How to manage state with the **useState** hook.
+- How to handle side effects using the **useEffect** hook.
+- How to create and manage forms in React to handle user input.
+- How to use local storage to persist data across browser sessions.
+
+---
+
+### 📄 Code Walkthrough:
+
+1. **State Management**:
+   - The broadcast message is stored in a state variable using the `useState` hook.
+   - The form input updates this state when submitted.
+
+2. **Handling Side Effects**:
+   - The `useEffect` hook loads the broadcast message from local storage when the component mounts.
+   - Another `useEffect` is used to save the broadcast message to local storage whenever it changes.
+
+3. **Form Handling**:
+   - A simple form is used to submit a new broadcast message, with the form submission being handled by a custom `handleSubmit` function.
+
+---
+
+### 🤝 Contributing:
+
+If you find any issues or have suggestions for improvements, feel free to open a pull request or create an issue in this repository.
+
+---
+
+### 📧 Get in Touch:
+
+For any questions regarding this lesson or the platform, you can reach us at **orders@eforge.online**.
+
+---
+
+**Happy Coding!**
