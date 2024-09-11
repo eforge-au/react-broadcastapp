@@ -36,7 +36,7 @@ function App() {
         broadcastPrompt && (
           /* We use a form here so that we can easily extract values, especially if we have mulitple arguments. */
           /* Additionally, forms are great as they allow the user to submit them from either the submit button OR by simply pressing enter without us adding any extra functionality such as key down listeners. */
-          <form className='mb-5 max-w-xl w-full flex flex-col border-[1px] border-gray-200 rounded-xl p-3' onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className='mb-5 max-w-xl w-full flex flex-col border-[1px] border-gray-200 rounded-xl p-3'>
             <div className='flex items-center'>
               <h1 className="broadcast text-xl font-semibold">Broadcast Menu</h1>
               <button onClick={() => setBroadcastPrompt(false)} className='border-[1px] border-red-300 ml-auto bg-red-500 text-white font-semibold aspect-square w-[30px] rounded-lg'>
@@ -44,7 +44,7 @@ function App() {
               </button>
             </div>
             <input className='mt-5 px-3 py-2 border-[1px] border-gray-200 my-2 rounded-lg font-light' placeholder='Your Broadcast' type="text" id="broadcast" name="broadcast" />
-            <button className='border-[1px] border-blue-300 rounded-lg py-2 bg-blue-500 text-white' type="submit">Submit</button>
+            <button type='submit' className='border-[1px] border-blue-300 rounded-lg py-2 bg-blue-500 text-white' type="submit">Submit</button>
           </form>
         )
       }
